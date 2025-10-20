@@ -25,4 +25,14 @@ public class ElectronicsShop {
         }
         return maxPrice;
     }
+
+    public int mostExpensiveUSB(int[] UsbPrices, int budget){
+        int maxPrice = UsbPrices[0];
+        for (int i = 1; i < UsbPrices.length; i++) {
+            if(UsbPrices[i] > maxPrice && UsbPrices[i] <= budget)
+                maxPrice = UsbPrices[i];
+        }
+
+        return maxPrice;
+    }
 }
