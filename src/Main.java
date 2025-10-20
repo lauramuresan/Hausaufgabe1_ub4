@@ -5,11 +5,12 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         ElectronicsShop electronicsShop = new ElectronicsShop();
-        int[] keyboards = {40, 35, 70, 15, 45};
-        int[] usbs = {20,40,16, 70, 12,87};
-        int budget = 46;
+        int[] keyboards = {60, 56, 51, 12, 91, 11};
+        int[] usbs = {8,12, 2, 8};
+        int budget = 60;
         System.out.println("Cheapest keyboard : " + electronicsShop.cheapestKeyboard(keyboards));
         System.out.println("Most expensive item : " + electronicsShop.mostExpensiveproduct(keyboards, usbs));
         System.out.println("Most expensive USB on budget : " + electronicsShop.mostExpensiveUSB(usbs, budget));
+        System.out.println("Most expensive pair Keyboard-USB on budget : " + electronicsShop.Keyboard_and_usb(keyboards, usbs, budget));
     }
 }
